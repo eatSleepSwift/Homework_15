@@ -1,8 +1,3 @@
-//
-//  ViewController.swift
-//  Homework_15
-//
-//  Created by Artsiom Kanashkou on 6.02.22.
 // Вертикальный список картинок (в скроллвью) по тапу на картинку открывается новый вьюконтроллер с полноразмерным изображением.
 
 import UIKit
@@ -11,7 +6,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
     
-    let images = ["image-1", "image-2", "image-3", "image-4", "image-5"]
+    let images = ["image-1",
+                  "image-2",
+                  "image-3",
+                  "image-4",
+                  "image-5",
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +68,5 @@ class ViewController: UIViewController {
         }
         navigationController?.pushViewController(imageVC, animated: true)
     }
-    
 }
 
